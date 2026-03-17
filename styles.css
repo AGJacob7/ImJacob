@@ -1,0 +1,27 @@
+img {
+  transition: 0.3s;
+}
+
+img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00ffff, 0 0 30px #ff00cc;
+}
+
+.tag {
+  display: inline-block;
+  background: #111;
+  border: 1px solid #00ffff;
+  color: #00ffff;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #00ffff;
+  font-size: 0.8em;
+  transition: 0.3s;
+}
+
+.tag:hover {
+  background: #ff00cc;
+  color: white;
+  box-shadow: 0 0 15px #ff00cc;
+}

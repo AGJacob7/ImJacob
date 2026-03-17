@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>JacobDev</title>
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Fuente gamer -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: radial-gradient(circle at top, #0f0f0f, #000);
+      color: #fff;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px;
+      background: linear-gradient(90deg, #ff00cc, #3333ff);
+      box-shadow: 0 0 20px #ff00cc;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+      text-shadow: 0 0 10px #fff, 0 0 20px #ff00cc;
+    }
+
+    header p {
+      font-size: 1.2em;
+      opacity: 0.8;
+    }
+
+    .perfil {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .perfil img {
+      width: 150px;
+      border-radius: 50%;
+      border: 3px solid #00ffff;
+      box-shadow: 0 0 20px #ff00cc;
+    }
+
+    .about {
+      padding: 30px;
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .about h2 {
+      color: #00ffff;
+    }
+
+    .skills {
+      margin-top: 15px;
+      font-size: 0.9em;
+      opacity: 0.9;
+    }
+
+    .container {
+      padding: 30px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .project {
+      background: #111;
+      border: 2px solid #00ffff;
+      border-radius: 15px;
+      padding: 20px;
+      transition: 0.3s;
+      box-shadow: 0 0 10px #00ffff;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .project:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #ff00cc, 0 0 40px #00ffff;
+    }
+
+    .project img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .project h3 {
+      margin-top: 0;
+      color: #00ffff;
+    }
+
+    .project::before {
+      content: "";
+      position: absolute;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(45deg, transparent, #00ffff, transparent);
+      animation: shine 3s linear infinite;
+      top: -50%;
+      left: -50%;
+      opacity: 0.2;
+    }
+
+    @keyframes shine {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #000;
+      border-top: 2px solid #ff00cc;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>⚡ Mi vida en código ⚡</h1>
+    <p>Desarrollador | Tecnología | Innovación</p>
+  </header>
+
+  <!-- FOTO -->
+  <div class="perfil">
+    <img src="img/JacobPro.jpg" alt="Mi foto">
+  </div>
+
+  <!-- SOBRE MÍ -->
+  <section class="about">
+    <h2>👨‍💻 Sobre mí</h2>
+    <p>
+      Soy desarrollador apasionado por la tecnología y la innovación, enfocado en la creación de soluciones digitales
+      modernas, eficientes y escalables. Me especializo en el desarrollo de aplicaciones web, sistemas empresariales y
+      experiencias interactivas.
+    </p>
+
+    <p>
+      Tengo experiencia trabajando con múltiples lenguajes y frameworks modernos, lo que me permite adaptarme a
+      diferentes tipos de proyectos y desafíos tecnológicos.
+    </p>
+
+    <div class="skills">
+      <span>⚡ Tecnologías:</span><br><br>
+
+      <!-- Lenguajes -->
+      <span class="tag">Java</span>
+      <span class="tag">PHP</span>
+      <span class="tag">Python</span>
+      <span class="tag">C#</span>
+      <span class="tag">JavaScript</span>
+
+      <!-- Frontend -->
+      <span class="tag">HTML</span>
+      <span class="tag">CSS</span>
+      <span class="tag">Angular</span>
+      <span class="tag">Vue</span>
+      <span class="tag">React</span>
+
+      <!-- Backend / Frameworks -->
+      <span class="tag">Laravel</span>
+      <span class="tag">.NET</span>
+      <span class="tag">Node.js</span>
+
+      <!-- Mobile -->
+      <span class="tag">Android Studio</span>
+
+      <!-- Bases de datos -->
+      <span class="tag">MySQL</span>
+      <span class="tag">PostgreSQL</span>
+      <span class="tag">SQL Server</span>
+      <span class="tag">MongoDB</span>
+      <span class="tag">Firebase</span>
+
+      <!-- Herramientas -->
+      <span class="tag">Git</span>
+      <span class="tag">GitHub</span>
+      <span class="tag">Docker</span>
+      <span class="tag">REST APIs</span>
+    </div>
+    <div class="container">
+
+
+      <div class="project">
+        <img src="img/recommendation.png" alt="Proyecto 7">
+        <h3>🤖 Sistema de Recomendación</h3>
+        <p>Motor inteligente que sugiere productos o contenido basado en el comportamiento del usuario utilizando
+          algoritmos de filtrado colaborativo.</p>
+      </div>
+
+      <div class="project">
+        <img src="img/AutoMarket.png" alt="Proyecto 2">
+        <h3>🚀 Sistema de Inventario</h3>
+        <p>Plataforma web para gestión de productos, ventas y control de stock, incluyendo reportes y análisis de datos
+          comerciales.</p>
+      </div>
+
+      <div class="project">
+        <img src="img/ventas.png" alt="Proyecto 4">
+        <h3>📊 Sistema de Análisis de Ventas</h3>
+        <p>Aplicación de análisis de datos que permite visualizar métricas clave, identificar tendencias y generar
+          reportes para la toma de decisiones.</p>
+      </div>
+
+      <div class="project">
+        <img src="img/movies.png" alt="Proyecto 5">
+        <h3>🎬 Análisis de Películas</h3>
+        <p>Sistema de análisis de datos que identifica las películas mejor valoradas, géneros más populares y patrones
+          de calificación mediante visualizaciones.</p>
+      </div>
+
+      <div class="project">
+        <img src="img/spam.png" alt="Proyecto 6">
+        <h3>📧 Clasificación de Correos (Spam)</h3>
+        <p>Modelo de machine learning que clasifica correos electrónicos en spam o no spam utilizando técnicas de
+          procesamiento de lenguaje natural.</p>
+      </div>
+
+      <div class="project">
+        <img src="img/MT.png" alt="Proyecto 1">
+        <h3>🚀 Sistema Web - Agencia de Viajes</h3>
+        <p>Desarrollo de sitio web en WordPress enfocado en experiencia de usuario, reservas online y optimización de
+          conversión.</p>
+      </div>
+
+      <div class="project">
+        <img src="img/crypto.png" alt="Proyecto 8">
+        <h3>📈 Predicción de Criptomonedas</h3>
+        <p>Modelo predictivo basado en series temporales para estimar el comportamiento de precios de criptomonedas y
+          apoyar decisiones de inversión.</p>
+      </div>
+
+      <div class="project">
+        <img src="img/App.png" alt="Proyecto 3">
+        <h3>🎮 Videojuego en Unity</h3>
+        <p>Juego interactivo desarrollado para el sector La Mariscal, enfocado en experiencia urbana digital e
+          interacción del usuario.</p>
+      </div>
+
+    </div>
+
+    <footer>
+      <p>⚡ Todos los derechos reservados JacobDev - 2026 ⚡</p>
+    </footer>
+
+</body>
+
+</html>
